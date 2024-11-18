@@ -883,7 +883,7 @@
     text-decoration: none;
     width: 2rem;
     height: 2rem;
-    background-color: #f7f7f7;
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -891,7 +891,7 @@
     transition: background-color 0.3s;
   }
   #cs-navigation .cs-social-link:hover {
-    background-color: var(--primary);
+    background-color: var(--secondary);
   }
   #cs-navigation .cs-social-link:hover .cs-social-icon {
     opacity: 1;
