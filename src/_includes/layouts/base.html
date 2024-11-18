@@ -20,10 +20,10 @@
         <meta property="og:image:secure_url" content="/assets/images/logo-small.png"/>
 
         <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/artisan-atlas-favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/artisan-atlas-favicon/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/artisan-atlas-favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/artisan-atlas-favicon/site.webmanifest">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
@@ -43,6 +43,16 @@
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SR8881D599"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-SR8881D599');
+        </script>
+
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
@@ -55,7 +65,7 @@
         <main id="main">
             {% block body %}{% endblock %}
         </main>
-        {% include "components/footer.html" %}
+        <!-- TO DO: make sure to include footer back here, when I'm happy with it-->
 
     </body>
 </html>

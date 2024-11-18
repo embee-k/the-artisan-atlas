@@ -1,5 +1,5 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
+title: 'The Artisan Atlas'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
@@ -77,44 +77,14 @@ eleventyNavigation:
     <!-- ============================================ -->
     <!--                    Hero                      -->
     <!-- ============================================ -->
-
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
-            </div>
-        </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+    {% include 'components/hero.html' %}
 
     <!-- ============================================ -->
     <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
+    <!--<section id="services" class="services">
+        &lt;!&ndash; Get Icons From flaticon.com &ndash;&gt;
         <div class="card">
             <picture>
                 <img
@@ -154,15 +124,15 @@ eleventyNavigation:
             <h2>Service 3</h2>
             <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
         </div>
-    </section>
+    </section>-->
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <!--<section id="sbs">
         <div class="cs-container">
-            <!-- Left Image Section -->
+            &lt;!&ndash; Left Image Section &ndash;&gt;
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
                     <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
@@ -175,7 +145,7 @@ eleventyNavigation:
                     <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
                 </picture>
             </div>
-            <!-- Right Content Section-->
+            &lt;!&ndash; Right Content Section&ndash;&gt;
             <div class="cs-right">
                 <span class="cs-topper">About Us</span>
                 <h2 class="cs-title">About Company Title</h2>
@@ -203,15 +173,15 @@ eleventyNavigation:
                 <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- ============================================ -->
     <!--            Extra Content To Rank             -->
     <!-- ============================================ -->
 
-    <section id="sbs-r">
+    <!--<section id="sbs-r">
         <div class="cs-container">
-            <!-- Left Image Section -->
+            &lt;!&ndash; Left Image Section &ndash;&gt;
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
                     <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
@@ -224,7 +194,7 @@ eleventyNavigation:
                     <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
                 </picture>
             </div>
-            <!-- Right Content Section-->
+            &lt;!&ndash; Right Content Section&ndash;&gt;
             <div class="cs-right">
                 <span class="cs-topper">SEO Ranking</span>
                 <h2 class="cs-title">Talk about a main service keyword</h2>
@@ -237,20 +207,20 @@ eleventyNavigation:
                 <a href="/blog" class="cs-button-solid">Read our Blog</a>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    <!--<section id="gallery">
         <div class="cs-container">
             <span class="cs-topper">Our Portfolio</span>
             <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
             <div class="cs-image-group">
-                <!-- Row 1-->
+                &lt;!&ndash; Row 1&ndash;&gt;
                 <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    &lt;!&ndash; To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout&ndash;&gt;
                     <picture class="cs-picture cs-picture1">
                         <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
@@ -267,9 +237,9 @@ eleventyNavigation:
                         <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
                     </picture>
                 </div>
-                <!-- Row 2 -->
+                &lt;!&ndash; Row 2 &ndash;&gt;
                 <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    &lt;!&ndash; To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout&ndash;&gt;
                     <picture class="cs-picture cs-picture1">
                         <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
@@ -286,9 +256,9 @@ eleventyNavigation:
                         <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
                     </picture>
                 </div>
-                <!-- Row 3 -->
+                &lt;!&ndash; Row 3 &ndash;&gt;
                 <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    &lt;!&ndash; To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout&ndash;&gt;
                     <picture class="cs-picture cs-picture1">
                         <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
@@ -309,13 +279,13 @@ eleventyNavigation:
             </div>
             <a href="/projects" class="cs-button-solid">View Full Gallery</a>
         </div>
-    </section>
+    </section>-->
 
     <!-- ============================================ -->
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    <!--<section id="reviews">
         <div class="cs-container">
             <span class="cs-topper">Our Reviews</span>
             <h2 class="cs-title">Words From Our Customers</h2>
@@ -323,7 +293,7 @@ eleventyNavigation:
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
             </p>
             <ul class="cs-card-group">
-                <!-- Review 1 -->
+                &lt;!&ndash; Review 1 &ndash;&gt;
                 <li class="cs-item">
                     <img
                     class="cs-item-img"
@@ -351,7 +321,7 @@ eleventyNavigation:
                     width="96"
                     height="16"/>
                 </li>
-                <!-- Review 2 -->
+                &lt;!&ndash; Review 2 &ndash;&gt;
                 <li class="cs-item">
                     <img
                     class="cs-item-img"
@@ -382,7 +352,5 @@ eleventyNavigation:
             </ul>
             <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
         </div>
-    </section>
-
-    {% include 'components/cta.html' %}
+    </section>-->
 {% endblock %}
