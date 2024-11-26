@@ -110,6 +110,10 @@
   .cs-hide-on-mobile {
     display: none;
   }
+
+  #cs-navigation {
+    opacity: 85%;
+  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {

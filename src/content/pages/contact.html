@@ -1,7 +1,7 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Contact | The Artisan Atlas'
+description: 'Contact The Artisan Atlas'
+preloadImg: '/assets/images/employee_apron.jpg'
 permalink: 'contact-us/'
 eleventyNavigation:
     key: Contact Us
@@ -37,12 +37,14 @@ eleventyNavigation:
             <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg" alt="graphic" width="150" height="165" aria-hidden="true">
         </div>
         <div class="cs-wrapper">
-            <form id="cs-form" name="Contact Form" method="post">
+            <!-- TO DO: Create a custom thank you page, currently just redirecting to home i.e. /-->
+            <form id="cs-form" name="Contact Form" method="POST" data-netlify="true" action="/" data-netlify-recaptcha="true">
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">Drop us a message to see how we can help!</p>
                 </div>
+                <input type="hidden" name="form-name" value="contact">
                 <label>
                     Name
                     <input required type="text" id="name" name="name" placeholder="Name">
@@ -58,7 +60,6 @@ eleventyNavigation:
                 <button class="cs-button-solid" type="submit">Submit Message</button>
             </form>
         </div>
-
     </div>
 </section>
 {% endblock %}
