@@ -21,7 +21,7 @@
       max-width: calc(704/16 * 1rem);
       margin: auto;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: calc(32/16 * 1rem);
@@ -394,12 +394,15 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  .cs-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 80rem;
-    gap: 5rem;
+  .steps-1893 {
+    .cs-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      max-width: 80rem;
+      gap: 5rem;
+      flex-direction: row;
+    }
   }
   #cs-form {
     max-width: 39.375rem;
