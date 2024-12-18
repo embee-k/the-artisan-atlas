@@ -21,7 +21,7 @@
       max-width: calc(704/16 * 1rem);
       margin: auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       gap: calc(32/16 * 1rem);
@@ -345,6 +345,7 @@
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
+
   #cs-contact #cs-form {
     display: flex;
     flex-wrap: wrap;
@@ -356,6 +357,9 @@
   }
   #cs-contact #cs-form .cs-label-message {
     width: 100%;
+  }
+  #cs-contact .cs-container {
+    flex-direction: row;
   }
 }
 /* Tablet - 768px */
